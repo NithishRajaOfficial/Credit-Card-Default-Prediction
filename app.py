@@ -13,7 +13,7 @@ import pickle
 
 
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('Credit-Card-Default-Prediction/model.pkl', 'rb'))
 
 @app.route('/')
 def home():
