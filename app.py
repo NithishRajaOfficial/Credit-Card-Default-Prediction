@@ -3,11 +3,10 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 
 
-# In[2]:
 
 
 app = Flask(__name__)
-model = pickle.load(open('Credit-Card-Default-Prediction/model.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 @app.route('/')
 def home():
