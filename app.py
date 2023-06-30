@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
@@ -46,10 +40,6 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-# In[ ]:
-
 
 
 
